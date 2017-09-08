@@ -4,7 +4,8 @@ A simple tool to make a BMI plot of height vs. weight in ggplot2 in R
 ## Examples
  
 ### Set up demo data set
-```demo_data=read.csv("http://people.ucsc.edu/~cdobkin/NHIS%202007%20data.csv")%>%
+```
+demo_data=read.csv("http://people.ucsc.edu/~cdobkin/NHIS%202007%20data.csv")%>%
    mutate(Weight=weight/2.20462, #convert pounds to kg
           Height=height*2.54,    #convert inches to cm
           Gender=recode(SEX,`1`="Male",`2`="Female"))%>%
