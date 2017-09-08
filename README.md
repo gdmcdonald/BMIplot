@@ -9,6 +9,8 @@ A simple tool to make a BMI plot of height vs. weight in ggplot2 in R
           Height=height*2.54,    #convert inches to cm
           Gender=recode(SEX,`1`="Male",`2`="Female"))%>%
    filter(Height<200,Weight<200) #remove ridiculous entries```
+   
+   
 ### Specify lots
 `makeBMIplot(sample_n(demo_data,100),weight="Weight",height="Height",colFactor="Gender",aspect_ratio = 3)`
 
