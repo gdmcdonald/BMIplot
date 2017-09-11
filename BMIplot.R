@@ -35,8 +35,7 @@ addBMIBackgroud<-function(my_plot,aspect_ratio=1,textTop=TRUE,jitter=FALSE,alpha
   t2<-text_out(2,xlims[1],xlims[2],ylims[1],ylims[2],aspect_ratio)
   t3<-text_out(3,xlims[1],xlims[2],ylims[1],ylims[2],aspect_ratio)
   t4<-text_out(4,xlims[1],xlims[2],ylims[1],ylims[2],aspect_ratio)
-  
-  print(t1)
+
   
   if(textTop==FALSE){
   my_plot$layers<-c(geom_ribbon(data=df, aes(x=x,ymin = y500, ymax = yHealthyMax), fill = "yellow", alpha=0.3),
