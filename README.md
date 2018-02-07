@@ -14,21 +14,41 @@ demo_data=read.csv("http://people.ucsc.edu/~cdobkin/NHIS%202007%20data.csv")%>%
    
    
 ### Specify lots
-`makeBMIplot(sample_n(demo_data,100),weight="Weight",height="Height",colFactor="Gender",aspect_ratio = 3)`
+```
+makeBMIplot(sample_n(demo_data,100),
+            weight="Weight",
+            height="Height",
+            colFactor="Gender",
+            aspect_ratio = 3)
+```
 
 ![Example 1](BMIex1.jpeg)
 
 ### Specify colour factor
-`makeBMIplot(sample_n(demo_data,100),colFactor="Gender")`
+```
+makeBMIplot(sample_n(demo_data,100),
+            colFactor="Gender")
+```
 
 ![Example 2](BMIex2.jpeg)
 
 ### Don't specify colour factor
-`makeBMIplot(sample_n(demo_data,100),alpha=0.3)`
+```
+makeBMIplot(sample_n(demo_data,100),
+            alpha=0.3)
+```
 
 ![Example 3](BMIex3.jpeg)
 
 ### Add jitter and alpha to counteract overplotting
-`makeBMIplot(demo_data,weight="Weight",height="Height",colFactor="Gender",aspect_ratio = 3,jitter=TRUE,alpha=0.4)` 
+```
+makeBMIplot(demo_data,
+            weight="Weight",
+            height="Height",
+            colFactor="Gender",
+            aspect_ratio = 3,
+            jitter=TRUE,
+            alpha=0.4)
+``` 
 
 ![Example 4](BMIex4.jpeg)
